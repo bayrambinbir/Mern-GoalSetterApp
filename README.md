@@ -23,3 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Frontend folder
 * npx create-react-app@latest frontend --template redux
+
+## Heroku Link
+[Goal Setter App](https://git.heroku.com/mern-goal-setter-app.git).
+

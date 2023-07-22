@@ -4,9 +4,11 @@
   "description": "Goal Setter App",
   "main": " server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "set PORT=3000 && node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend"
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Bayram Binbir",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "pwd": "^1.1.0"
   },
   "devDependencies": {
+    "concurrently": "^8.2.0",
     "nodemon": "^2.0.22"
   }
 }

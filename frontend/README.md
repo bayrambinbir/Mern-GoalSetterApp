@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## npm downloads
+
+- npm i axios react-toastify (for the frontend folder)
+- npm i -D concurrently (This package is to run front end and back end concurrently)
+
 ## Available Scripts
 
 In the project directory, you can run:
